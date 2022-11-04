@@ -3,13 +3,12 @@
 using ConsoleStrategy;
 using ConsoleStrategy.Converters;
 
-Console.WriteLine("Hello, World!");
 
 decimal valorOriginal = 1m;
 
-Console.WriteLine("de dólar para R$ = " + new CurrencyConverter().ToBrl(valorOriginal, new DolarConverter()));
+Console.WriteLine("de dólar para R$ = " + new CurrencyConverter().ToBrl(valorOriginal, new USDConverter()));
 
-Console.WriteLine("de euro para R$ = " + new CurrencyConverter().ToBrl(valorOriginal, new EuroConverter()));
+Console.WriteLine("de euro para R$ = " + new CurrencyConverter().ToBrl(valorOriginal, new EURConverter()));
 
 Console.WriteLine("de Peso Arg para R$ = " + new CurrencyConverter().ToBrl(valorOriginal, new PesoARGConverter()));
 

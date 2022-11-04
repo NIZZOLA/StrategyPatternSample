@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleStrategy;
 
-public class PriceModel
-{
+public class CurrencyExchangeModel
+{ 
     public decimal Value { get; set; }
     public CurrencyEnum Currency { get; set; }
 }
